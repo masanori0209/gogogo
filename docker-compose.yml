@@ -1,0 +1,10 @@
+version: '3'
+services:
+  gogogo:
+    build:
+      context: ./go-server
+      dockerfile: ./Dockerfile
+    environment:
+      TZ: Asia/Tokyo
+    ports:
+      - "8090:80"
